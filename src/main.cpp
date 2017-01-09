@@ -196,9 +196,9 @@ bool wifiConnected() {
   // minimize NVM cell wear from excessive writing
   // TODO: Need to check all persisted values for change since last write
   if (WiFi.SSID() != SSID) {
-    WiFi.persistent(false);
-  } else {
     WiFi.persistent(true);
+  } else {
+    WiFi.persistent(false);
     Serial.println("Using saved WiFi settings");
   }
   // Pass MAC address and channel to minimize scanning and negotiation with router
