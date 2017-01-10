@@ -37,10 +37,10 @@ believe a battery-powered component will power up and send a message to a server
 been kicked down the road since the opportunity for more gain is diminishing. At this point, the
 timing results:
 
-** 340-350ms to boot up the ESP
-** 150-200ms to connecting to the AP
-** 20-60ms to wake up the component server
-** 10-12ms to send the message packet
+  * 340-350ms to boot up the ESP
+  * 150-200ms to connecting to the AP
+  * 20-60ms to wake up the component server
+  * 10-12ms to send the message packet
 
 * This delivers a total time of 510-620ms. I think there is still time to be
 recovered in the AP connection since the AP disconnects the component even
